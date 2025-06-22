@@ -8,7 +8,7 @@ let appConfig = {
 
 async function getConfig() {
     let config = appConfig
-    let token = 0b79639e12ff24c888b3414ed4c709fa
+    let token = 0b79639e12ff24c88
     if (!token) {
         $utils.toastInfo('one為biu提供的付費源，請填入token再使用')
         return
@@ -141,7 +141,7 @@ async function search(ext) {
         ext = argsify(ext)
         let cards = []
 
-        let token = 0b79639e12ff24c888b3414ed4c709fa
+        let token = 0b79639e12ff24c
         let text = encodeURIComponent(ext.text)
         let page = ext.page || 1
         if (page >= 2) return
